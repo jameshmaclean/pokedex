@@ -1,0 +1,16 @@
+<div class="container">
+  <ng-container *ngIf="pokemons.length <= 0; else pokemonList">
+    <h2>Não há pokemons cadastrados</h2>
+  </ng-container>
+  <ng-template #pokemonList>
+    <div class="content-container">
+      <div *ngFor="let pokemon of pokemons">
+        <app-pokemon-card
+          [pokemon]="pokemon"
+          (handleRemovePokemon)="handleRemovePokemon(pokemon.id)"
+          (handleEditPokemon)="handleNavigateEditPage(pokemon.id)"
+        ></app-pokemon-card>
+      </div>
+    </div>
+  </ng-template>
+</div>

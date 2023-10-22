@@ -1,0 +1,34 @@
+<div class="container">
+  <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+    <div class="form-container">
+      <label for="Name" class="label-name"> Name </label>
+      <input
+        id="Name"
+        type="text"
+        formControlName="name"
+        placeholder="Pikachu"
+      />
+
+      <label for="Type" class="label-type"> Type </label>
+      <input
+        id="Type"
+        placeholder="Electric"
+        type="text"
+        formControlName="type"
+      />
+
+      <label for="Description" class="label-description"> Description </label>
+      <input
+        id="Description"
+        type="text"
+        formControlName="description"
+        placeholder="Pokémon elétrico"
+      />
+
+      <button class="button" type="submit">Enviar</button>
+      <button class="button-back" (click)="navigateToHome()">
+        Voltar à Página Inicial
+      </button>
+    </div>
+  </form>
+</div>

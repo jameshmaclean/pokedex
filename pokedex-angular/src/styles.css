@@ -1,0 +1,50 @@
+/* styles.css */
+
+:root {
+  --white: #fff;
+
+  --gray-100: #e8ecef;
+  --gray-200: #e8ecff;
+  --gray-300: #c4c4cc;
+  --gray-400: #8d8d99;
+  --gray-500: #7c7c8a;
+  --gray-600: #323238;
+  --gray-700: #29292e;
+  --gray-800: #202024;
+  --gray-900: #121214;
+
+  --green-300: #2c6c86;
+  --green-500: #07afa5;
+  --green-700: #2d8da0;
+  --blue-100: #3b4cca;
+  --yellow-100: #ffde00;
+  --yellow-200: #b3a125;
+
+  --red-500: #ff0000;
+  --red-700: #cc0000;
+  --yellow-500: #fba94c;
+
+  --normal: #a8a77a;
+  --fire: #ee8130;
+  --water: #6390f0;
+  --electric: #f7d02c;
+  --grass: #7ac74c;
+  --ice: #96d9d6;
+  --fighting: #c22e28;
+  --poison: #a33ea1;
+  --ground: #e2bf65;
+  --flying: #a98ff3;
+  --psychic: #f95587;
+  --bug: #a6b91a;
+  --rock: #b6a136;
+  --ghost: #735797;
+  --dragon: #6f35fc;
+  --dark: #705746;
+  --steel: #b7b7ce;
+  --fairy: #d685ad;
+}
+
+body {
+  background-color: var(--blue-100);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}

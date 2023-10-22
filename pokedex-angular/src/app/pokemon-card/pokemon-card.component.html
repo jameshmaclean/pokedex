@@ -1,0 +1,13 @@
+<div class="container" id="{{ pokemon.type }}">
+  <div (click)="editPokemon(pokemon.id)" class="pokemon-name">
+    {{ pokemon.name }}
+    <span class="pokemon-number">#{{ pokemon.id }}</span>
+  </div>
+  <div class="pokemon-details-container">
+    <p class="pokemon-description">{{ pokemon.description }}</p>
+    <span id="{{ pokemon.type }}">
+      {{ pokemon.type }}
+    </span>
+    <i class="close-icon" (click)="removePokemon(pokemon.id)">X</i>
+  </div>
+</div>

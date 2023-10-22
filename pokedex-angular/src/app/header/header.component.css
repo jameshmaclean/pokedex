@@ -1,0 +1,39 @@
+.container {
+  margin: 0 auto;
+  width: 90%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
+.container img {
+  object-fit: contain;
+  height: 150px;
+}
+ul {
+  background-color: var(--red-700);
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: row;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: space-around;
+}
+li {
+  color: var(--white);
+  background-color: var(--red-700);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  &:hover {
+    color: var(--yellow-100);
+  }
+}
